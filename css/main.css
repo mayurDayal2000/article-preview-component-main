@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4.625rem 1.5rem;
+  background-color: var(--light-grayish-blue);
+  font-family: "Manrope";
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 3px #eee;
+}
+
+img[alt="drawer illustration"] {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+section h1 {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  color: var(--very-dark-grayish-blue);
+  margin-top: 1.875rem;
+  padding: 0 1.75rem;
+}
+
+section > p {
+  font-weight: 400;
+  font-size: 0.813rem;
+  letter-spacing: 0.024em;
+  line-height: 1.384;
+  color: var(--desaturated-dark-blue);
+  margin: 1rem 0 2rem;
+  padding: 0 1.75rem;
+}
+
+.primary-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.75rem;
+}
+
+.primary-list li:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+
+img[alt="michelle profile"] {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.user-content {
+  margin-left: 1.125rem;
+}
+
+.primary-list h3 {
+  font-weight: 700;
+  font-size: 0.813rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.primary-list span {
+  font-family: 400;
+  font-size: 0.813rem;
+  letter-spacing: 0.02em;
+  color: var(--grayish-blue);
+}
+
+.primary-list button,
+.active-list button {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: var(--light-grayish-blue);
+  cursor: pointer;
+}
+
+.primary-list {
+  padding-bottom: 1.25rem;
+}
+
+.active-list {
+  list-style: none;
+  background-color: var(--very-dark-grayish-blue);
+  padding: 0.938rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active-list li:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+
+.active-list p {
+  font-weight: 400;
+  font-size: 0.938rem;
+  letter-spacing: 0.25em;
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  margin-right: 1.25rem;
+}
+
+img[alt="facebook icon"],
+img[alt="twitter icon"],
+img[alt="pinterest icon"] {
+  margin-right: 0.938rem;
+}
+
+.active-list button {
+  background-color: var(--grayish-blue);
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  img[alt="drawer illustration"] {
+    height: 100%;
+    grid-column: 1/2;
+    object-position: left;
+    object-fit: cover;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  section h1 {
+    padding: 0 2.375rem;
+    margin-top: 1.875rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.035em;
+  }
+
+  section > p {
+    padding: 0 2.375rem;
+    letter-spacing: normal;
+  }
+
+  .active-state-01 {
+    position: relative;
+  }
+
+  .primary-list {
+    padding: 0 2.375rem 1.25rem;
+  }
+
+  .active-list {
+    justify-content: center;
+    width: fit-content;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 80px;
+    right: -80px;
+    padding: 1rem 2.25rem;
+  }
+
+  .active-list li:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .active-list li:nth-of-type(2) {
+    display: none;
+  }
+
+  .pointer {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 14px 0 14px;
+    border-color: transparent;
+    border-top-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    bottom: 70px;
+    right: 40px;
+  }
+}
