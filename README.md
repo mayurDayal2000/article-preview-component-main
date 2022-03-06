@@ -21,13 +21,20 @@ Users should be able to:
 
 ## Screenshot
 
-![pending state]()
+### Mobile Screenshot
+![mobile screenshot](./images/mobile.png)
+
+### Desktop Screenshot
+![desktop screenshot](./images/desktop.png)
+
+### Active State Screenshot
+<img src="./images/active.gif" alt="active state" />
 
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/mayurDayal2000/article-preview-component-main](https://github.com/mayurDayal2000/article-preview-component-main)
+- Live Site URL: [https://mayurDayal2000.github.io/article-preview-component-main/](https://mayurDayal2000.github.io/article-preview-component-main/)
 
 
 # Built with
@@ -36,4 +43,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CSS Transition
 - Mobile-first workflow
+- JavaScript DOM manipulation
+- JavaScript Function Expression
+
+## Author
+
+- Frontend Mentor - [@mayurDayal2000](https://www.frontendmentor.io/profile/mayurDayal2000)
+- Twitter - [@mayur_dayal_5k](https://twitter.com/mayur_dayal_5k)
